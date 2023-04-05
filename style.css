@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+@font-face {
+  font-family: Helvetica;
+  src: url("HelveticaNeueLTProTh.otf");
+}
+@font-face {
+  font-family: Helvetica-bold;
+  src: url("HelveticaNeueLTProBd.otf");
+}
+#main {
+  height: 100vh;
+  width: 98vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.submain {
+  height: 90%;
+  width: 48%;
+  border-radius: 7px;
+  border: 1px solid rgb(223, 211, 211);
+}
+.part1 {
+  height: 55%;
+  background-color: #f9f9f9;
+  width: 100%;
+  padding: 25px;
+}
+.part1 h1 {
+  font-size: 40px;
+  color: #282c36;
+  font-family: Helvetica-bold;
+}
+.part2 h2 {
+  font-size: 25px;
+  color: #282c36;
+  font-family: Helvetica-bold;
+}
+.part1 img {
+  height: 70px;
+  width: 70px;
+  margin-bottom: 20px;
+}
+.part1 p {
+  margin: 25px, 0;
+  margin-top: 20px;
+
+  font-size: 21px;
+  color: #484b54;
+}
+.part2 {
+  padding: 28px;
+}
+.part2 img {
+  height: 100%;
+  width: 100%;
+}
+.text {
+  width: 60%;
+}
+.img {
+  height: 150px;
+  width: 120px;
+  position: absolute;
+  left: 58%;
+  top: 58%;
+  /* background-color: aqua; */
+}
+.part2 h2 {
+  margin-bottom: 17px;
+}
+.part2 p {
+  font-size: 17px;
+  line-height: 25px;
+  font-family: Helvetica;
+  font-weight: 400;
+  color: #484b54;
+}
+a {
+  color: red;
+}
+.bottomlogo {
+  position: absolute;
+  bottom: -5%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  height: 6%;
+}
+/* @media  (min-width: 1024px) and (max-width:2560px) {
+    .submain {
+        width: 44%;
+        height: 70%;
+        background-color: red;
+      }
+      .part1 {
+        padding: 35px;
+        height: 50%;
+      }
+      .part1 h1 {
+        font-size: 70px;
+      }
+      .part2 {
+        height: 50%;
+        padding: 35px;
+        background-color: aqua;
+      }
+      .part1 img {
+        height: 120px;
+        width: 120px;
+      }
+      .part1 p {
+        margin: 20px, 0;
+        margin-top: 35px;
+        font-size: 37px;
+      }
+      .part2 h2{
+        font-size: 65px;
+        margin-top: 20px;
+      }
+      .part2 p {
+        font-size: 37px;
+        line-height: 45px;
+        
+      }
+      .text{
+        width: 70%;
+      }
+      .img {
+        left: 60%;
+        
+        height: 350px;
+  width: 300px;
+  left: 57%;
+  top: 58%;
+      }
+      .bottomlogo {
+        bottom: -7%;
+      }
+} */
+@media (min-width: 800px) and (max-width: 1524px) {
+  .submain {
+    width: 48%;
+  }
+  .part1 {
+    height: 50%;
+    padding: 35px;
+  }
+  .part1 h1 {
+    font-size: 40px;
+  }
+  .part2 h2 {
+    font-size: 25px;
+  }
+
+  .part1 p {
+    margin: 25px, 0;
+    margin-top: 26px;
+
+    font-size: 21px;
+  }
+  .part2 {
+    padding: 28px;
+  }
+
+  .text {
+    width: 60%;
+  }
+  .img {
+    left: 58%;
+    top: 58%;
+  }
+  .part2 h2 {
+    margin-bottom: 17px;
+  }
+
+  .bottomlogo {
+    bottom: -5%;
+  }
+}
+@media only screen and (min-width: 500px) and (max-width: 800px) {
+  .submain {
+    width: 74%;
+    height: 90%;
+  }
+  .part1 {
+    padding: 25px;
+    height: 50%;
+  }
+  .part1 h1 {
+    font-size: 30px;
+  }
+  .part2 {
+    height: 50%;
+    padding: 23px;
+  }
+  .part1 img {
+    height: 60px;
+    width: 60px;
+  }
+  .part1 p {
+    margin: 20px, 0;
+    margin-top: 15px;
+    font-size: 17px;
+  }
+  .part2 h2 {
+    font-size: 22px;
+    margin-top: -5px;
+  }
+
+  .img {
+    left: 60%;
+  }
+  .bottomlogo {
+    bottom: -7%;
+  }
+}
+/* Phone */
+@media only screen and (max-width: 500px) {
+  .submain {
+    height: 90%;
+    width: 90%;
+  }
+
+  .part1 {
+    height: 50%;
+    padding: 25px;
+  }
+
+  .part1 h1 {
+    font-size: 25px;
+  }
+  .part2 h2 {
+    font-size: 20px;
+  }
+
+  .part1 p {
+    margin-top: 7px;
+
+    font-size: 16px;
+  }
+  .part2 {
+    height: 50%;
+    padding: 22px;
+  }
+
+  .img {
+    height: 120px;
+    width: 100px;
+    padding: 5px;
+    left: 60%;
+    top: 60%;
+  }
+  .part2 h2 {
+    margin-bottom: 10px;
+  }
+  .text {
+    width: 60%;
+  }
+  .part2 p {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .bottomlogo {
+    position: absolute;
+    left: 50%;
+    bottom: -6%;
+    transform: translate(-50%, 0);
+    height: 6%;
+  }
+}
